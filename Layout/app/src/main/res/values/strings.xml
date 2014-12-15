@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Layout</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="sNomber">Nombre</string>
+    <string name="sApellidos">Apellidos</string>
     <string name="action_settings">Settings</string>
 
 </resources>

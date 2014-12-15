@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <item type="id" name="ident_1"></item>
-    <item type="id" name="ident_2"></item>
-    <item type="id" name="ident_3"></item>
+    <item type="id" name="eTNombre"></item>
+    <item type="id" name="eTApellidos"></item>
+    <item type="id" name="tVNombre"></item>
+    <item type="id" name="tVApellidos"></item>
 
 </resources>
