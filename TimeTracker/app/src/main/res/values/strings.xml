@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TimeTracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="calcular">Calcular</string>
+    <string name="distancia">Distancia</string>
+    <string name="velocidad">Velocidad</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="valora">Valor A</string>
+    <string name="valorb">Valor B</string>
+    <string name="resultado">Resultado</string>
+
+</resources>
