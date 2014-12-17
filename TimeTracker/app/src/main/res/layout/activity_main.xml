@@ -17,13 +17,14 @@
         android:layout_gravity="fill_horizontal|center_horizontal"
         android:gravity="center"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:background="#ff7190aa">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/distancia"
-            android:id="@+id/radioButton1"
+            android:id="@+id/radioDistancia"
             android:checked="false"
             android:paddingRight="20dp" />
 
@@ -31,43 +32,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tiempo"
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioTiempo"
             android:checked="false"
-            android:layout_toRightOf="@+id/radioButton2" />
+            android:layout_toRightOf="@+id/radioVelocidad" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/velocidad"
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioVelocidad"
             android:checked="false"
             android:layout_gravity="center_vertical"
             android:paddingRight="20dp"
-            android:layout_toRightOf="@+id/radioButton1" />
+            android:layout_toRightOf="@+id/radioDistancia" />
     </RadioGroup>
 
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:orientation="vertical">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/calcular"
-            android:id="@+id/button"
-            android:layout_above="@+id/textView3"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="109dp"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-
-
     <RelativeLayout
+        android:background="#ff06aaa7"
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:layout_gravity="center_horizontal"
@@ -75,79 +57,96 @@
         android:layout_marginTop="100dp"
         android:id="@+id/layoutInputA">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/valorb"
-            android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="38dp"
-            android:layout_marginStart="38dp" />
-
         <EditText
             android:layout_width="@dimen/dimen150"
             android:layout_height="wrap_content"
-            android:id="@+id/inputvalorA"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="56dp"
-            android:layout_marginEnd="56dp" />
+            android:layout_marginEnd="56dp"
+            android:id="@+id/inputvalorA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valora"
+            android:id="@+id/labelA"
+            android:layout_alignBottom="@+id/inputvalorA"
+            android:layout_toLeftOf="@+id/inputvalorA"
+            android:layout_toStartOf="@+id/inputvalorA"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp" />
 
     </RelativeLayout>
 
 
     <RelativeLayout
+        android:background="#ff229daa"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_below="@id/layoutInputA"
         android:id="@+id/layoutInputB">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/valora"
-            android:id="@+id/textView4"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
         <EditText
             android:layout_width="@dimen/dimen150"
             android:layout_height="wrap_content"
             android:id="@+id/inputvalorB"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView"
-            android:layout_gravity="center_horizontal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/resultado"
             android:id="@+id/labelResultado"
-            android:layout_alignParentBottom="true"/>
+            android:layout_alignBottom="@+id/inputResultado"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
 
         <EditText
             android:layout_width="@dimen/dimen150"
             android:layout_height="wrap_content"
             android:id="@+id/inputResultado"
-            android:layout_marginTop="29dp"
-            android:layout_below="@+id/editText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_toLeftOf="@+id/radioGroup"
-            android:layout_toStartOf="@+id/radioGroup" />
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/inputvalorB"
+            android:layout_alignLeft="@+id/inputvalorB"
+            android:layout_alignStart="@+id/inputvalorB" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:id="@+id/buttonCalcular"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/inputResultado"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valorb"
+            android:id="@+id/labelB"
+            android:layout_alignBottom="@+id/inputvalorB"
+            android:layout_alignRight="@+id/labelResultado"
+            android:layout_alignEnd="@+id/labelResultado" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/">
+
     </RelativeLayout>
 
 </RelativeLayout>
