@@ -140,13 +140,15 @@
             android:layout_alignRight="@+id/labelResultado"
             android:layout_alignEnd="@+id/labelResultado" />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerUnidades"
+            android:layout_below="@+id/buttonCalcular"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/unidades"/>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/">
-
-    </RelativeLayout>
+            <!-- entries : Carga los datos a partir de entries -->
 
 </RelativeLayout>

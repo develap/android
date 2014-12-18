@@ -5,10 +5,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity implements RadioGroup.OnCheckedChangeListener, View.OnClickListener{
@@ -16,6 +19,7 @@ public class MainActivity extends ActionBarActivity implements RadioGroup.OnChec
     private EditText inputValorA, inputValorB, inputResultado;
     private RadioGroup radioGroup;
     private Button buttonCalcular;
+    private Spinner desplegable;
 
 
     @Override
@@ -31,6 +35,20 @@ public class MainActivity extends ActionBarActivity implements RadioGroup.OnChec
         inputResultado = (EditText)findViewById(R.id.inputResultado);
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
         buttonCalcular = (Button)findViewById(R.id.buttonCalcular);
+        desplegable = (Spinner)findViewById(R.id.spinnerUnidades);
+
+
+        desplegable.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+               Toast.makeText(getApplicationContext(), desplegable.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
 
         radioGroup.setOnCheckedChangeListener(this);
         buttonCalcular.setOnClickListener(this);
@@ -81,6 +99,7 @@ public class MainActivity extends ActionBarActivity implements RadioGroup.OnChec
         }
     }
 
+
     @Override
     public void onClick(View v) {
         Float a = Float.parseFloat(inputValorA.getText().toString());
@@ -102,4 +121,5 @@ public class MainActivity extends ActionBarActivity implements RadioGroup.OnChec
                 break;
         }
     }
+
 }

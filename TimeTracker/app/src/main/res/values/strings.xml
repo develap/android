@@ -12,4 +12,13 @@
     <string name="valorb">Valor B</string>
     <string name="resultado">Resultado</string>
 
+    <string-array name="unidades">
+        <item>Kelometros/Hora</item>
+        <item>Metros/segundo</item>
+        <item>Kilometros</item>
+        <item>Metros</item>
+        <item>Horas</item>
+        <item>Segundos</item>
+    </string-array>
+
 </resources>
