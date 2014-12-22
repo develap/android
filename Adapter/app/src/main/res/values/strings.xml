@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Adapter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sBoton1">Abrir ListView</string>
+    <string name="sBoton2">Abrir GridLayout</string>
+
+    <string-array name="aSistemas">
+        <item>Windows XP</item>
+        <item>Windows 7</item>
+        <item>Windows 8</item>
+        <item>Windows 8.1</item>
+        <item>Windows server 2003</item>
+        <item>Windows server 2008</item>
+        <item>Windows 2008 R2</item>
+        <item>Windows 2012</item>
+        <item>Windows 2012 R2</item>
+        <item>Ubuntu</item>
+        <item>Fedora</item>
+        <item>Centos</item>
+        <item>Debian</item>
+        <item>OS 10</item>
+    </string-array>
+
+    <string name="title_activity_distribucion_list_v">DistribucionListVActivity</string>
+    <string name="title_activity_distribucion_grid_view">DistribucionGridViewActivity</string>
+
+</resources>
